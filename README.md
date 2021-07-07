@@ -17,7 +17,7 @@
   然后在配置
   
     umeng.push.app-key=xxxxxxxxx
-    umeng.push.app-secret=xxxxxxxxxxxxxxxxxx
+    umeng.push.app-master-secret=xxxxxxxxxxxxxxxxxx
     
  ## 使用
  
