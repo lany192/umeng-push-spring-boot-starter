@@ -15,9 +15,9 @@ public class UmengPushAutoConfig {
     @Bean
     @ConditionalOnMissingBean
     public PushClient pushClient(UmengPushProperties properties) {
-        if (ObjectUtils.isEmpty(properties.getAppKey()) || ObjectUtils.isEmpty(properties.getAppSecret())) {
-            throw new RuntimeException("请先配置友盟推送的appkey和appSecret");
+        if (ObjectUtils.isEmpty(properties.getAppKey()) || ObjectUtils.isEmpty(properties.getAppMasterSecret())) {
+            throw new RuntimeException("请先配置友盟推送的AppKey和AppMasterSecret");
         }
-        return new PushClient(properties.getAppKey(), properties.getAppSecret());
+        return new PushClient(properties.getAppKey(), properties.getAppMasterSecret());
     }
 }
