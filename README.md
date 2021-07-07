@@ -21,11 +21,4 @@
  ## 使用
  
     @Autowired
-    AliSmsService aliSmsService;
-    
-    //发送短信
-    aliSmsService.sendSms()
-    //批量发送
-    aliSmsService.sendBatchSms()
-    //查询
-    aliSmsService.querySendDetails()
+    PushClient pushClient;
