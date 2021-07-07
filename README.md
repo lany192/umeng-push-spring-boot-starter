@@ -4,9 +4,10 @@
 # 安装
  因为没有上传到中央仓库，使用需要将本项目clone到本地，运行安装到本地
  
- # 引用
- 
+ # 引用：先git clone 项目编译后安装到本地
+
     <!--友盟推送java服务端SDK，本地仓库-->
+
     <dependency>
         <groupId>com.github.lany192</groupId>
         <artifactId>umeng-push-spring-boot-starter</artifactId>
