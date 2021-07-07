@@ -256,27 +256,3 @@
         filecast.setTestMode();
         client.send(filecast);
     }
-
-    public static void main(String[] args) {
-        // TODO set your appkey and master secret here
-        Demo demo = new Demo("your appkey", "your master secret");
-        try {
-            demo.sendAndroidUnicast();
-            //demo.sendIOSUnicast();
-            /* TODO these methods are all available, just fill in some fields and do the test
-             * demo.sendAndroidCustomizedcastFile();
-             * demo.sendAndroidBroadcast();
-             * demo.sendAndroidGroupcast();
-             * demo.sendAndroidCustomizedcast();
-             * demo.sendAndroidFilecast();
-             *
-             * demo.sendIOSBroadcast();
-             * demo.sendIOSUnicast();
-             * demo.sendIOSGroupcast();
-             * demo.sendIOSCustomizedcast();
-             * demo.sendIOSFilecast();
-             */
-        } catch (Exception ex) {
-            ex.printStackTrace();
-        }
-    }
